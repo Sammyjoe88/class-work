@@ -1,0 +1,151 @@
+html, body {
+    /* The universe takes up all available space */
+    width: 100%;
+    height: 100%;
+    
+    /* The universe is black */
+    background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+#sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: 0px; 
+    margin-left: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#venus {
+   position: absolute;
+  top: 10%;
+  right: 75%;
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#venus-orbit{
+  position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+
+    width: 450px;
+    height: 450px;
+    margin-top: -145px;
+    margin-left: -145px;
+
+  border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+     -webkit-animation: spin-left 12s linear infinite;
+     -moz-animation: spin-left 12s linear infinite;
+      -ms-animation: spin-left 12s linear infinite;
+       -o-animation: spin-left 12s linear infinite;
+          animation: spin-left 12s linear infinite;
+}
+
+#mecury{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  height: 30px;
+  width: 30px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#mecury-orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+
+    width: 250px;
+    height: 250px;
+    margin-top: -25px;
+    margin-left: -25px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+     -webkit-animation: spin-left 15s linear infinite;
+     -moz-animation: spin-left 15s linear infinite;
+      -ms-animation: spin-left 15s linear infinite;
+       -o-animation: spin-left 15s linear infinite;
+          animation: spin-left 15s linear infinite;
+}
+
+#earth {
+    /* Style your earth */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+   /* border-color: yellow;*/
+   /* border-width: 8px;*/
+   /* border-style: solid;*/
+   /*border-radius: 50%;*/
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    
+}
+
+#earth-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+
+    width: 600px;
+    height: 600px;
+    margin-top: -210px;
+    margin-left: -210px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+     -webkit-animation: spin-left 20s linear infinite;
+     -moz-animation: spin-left 20s linear infinite;
+      -ms-animation: spin-left 20s linear infinite;
+       -o-animation: spin-left 20s linear infinite;
+          animation: spin-left 20s linear infinite;
+}
+
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
