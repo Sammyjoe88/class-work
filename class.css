@@ -2,33 +2,35 @@ html, body {
     /* The universe takes up all available space */
     width: 100%;
     height: 100%;
-    
+
+    position: relative;
     /* The universe is black */
     background-color: black;
 }
 * {
   box-sizing: border-box;
 }
+.same{
+  border-radius: 50%;
+  position: absolute;
+}
 
 #sun {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
+    top: 43%;
+    left: 48%;
     height: 200px;
     width: 200px;
     margin-top: 0px; 
     margin-left: 0px;
     border-width: 1px;
     border-style: solid;
-    border-radius: 50%;
 }
 
 #venus {
    position: absolute;
-  top: 10%;
-  right: 75%;
+  top: 0%;
+  right: 50%;
   height: 50px;
   width: 50px;
   margin-top: -25px;
@@ -36,21 +38,18 @@ html, body {
 }
 
 #venus-orbit{
-  position: relative;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
+  position: absolute;
+    top: 55%;
+    left: 55%;
 
-    width: 450px;
-    height: 450px;
-    margin-top: -145px;
-    margin-left: -145px;
+    width: 350px;
+    height: 350px;
+    margin-top: -160px;
+    margin-left: -160px;
 
   border-width: 2px;
     border-style: dotted;
     border-color: white;
-    border-radius: 50%;
      -webkit-animation: spin-left 12s linear infinite;
      -moz-animation: spin-left 12s linear infinite;
       -ms-animation: spin-left 12s linear infinite;
@@ -60,30 +59,27 @@ html, body {
 
 #mecury{
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 50%;
   height: 30px;
   width: 30px;
-  margin-top: -25px;
+  margin-top: -18px;
   margin-left: -25px;
 }
 
 #mecury-orbit{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
+    top: 55%;
+    left: 55%;
 
     width: 250px;
     height: 250px;
-    margin-top: -25px;
-    margin-left: -25px;
+    margin-top: -110px;
+    margin-left: -110px;
 
     border-width: 2px;
     border-style: dotted;
     border-color: white;
-    border-radius: 50%;
      -webkit-animation: spin-left 15s linear infinite;
      -moz-animation: spin-left 15s linear infinite;
       -ms-animation: spin-left 15s linear infinite;
@@ -96,10 +92,6 @@ html, body {
     position: absolute;
     top: 0%;
     left: 50%;
-   /* border-color: yellow;*/
-   /* border-width: 8px;*/
-   /* border-style: solid;*/
-   /*border-radius: 50%;*/
     height: 50px;
     width: 50px;
     margin-left: -25px;
@@ -109,25 +101,203 @@ html, body {
 
 #earth-orbit {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
+    top: 55%;
+    left: 55%;
 
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     margin-top: -210px;
     margin-left: -210px;
 
     border-width: 2px;
     border-style: dotted;
     border-color: white;
-    border-radius: 50%;
      -webkit-animation: spin-left 20s linear infinite;
      -moz-animation: spin-left 20s linear infinite;
       -ms-animation: spin-left 20s linear infinite;
        -o-animation: spin-left 20s linear infinite;
           animation: spin-left 20s linear infinite;
+}
+
+#mars{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#mars-orbit{
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 550px;
+    height: 550px;
+    margin-top: -260px;
+    margin-left: -260px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 30s linear infinite;
+     -moz-animation: spin-left 30s linear infinite;
+      -ms-animation: spin-left 30s linear infinite;
+       -o-animation: spin-left 30s linear infinite;
+          animation: spin-left 30s linear infinite;
+}
+
+#jupiter{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -25px;
+}
+
+
+#jupiter-orbit {
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 650px;
+    height: 650px;
+    margin-top: -310px;
+    margin-left: -310px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 23s linear infinite;
+     -moz-animation: spin-left 23s linear infinite;
+      -ms-animation: spin-left 23s linear infinite;
+       -o-animation: spin-left 23s linear infinite;
+          animation: spin-left 23s linear infinite;
+}
+
+#saturn{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#saturn-orbit{
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 750px;
+    height: 750px;
+    margin-top: -360px;
+    margin-left: -360px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 33s linear infinite;
+     -moz-animation: spin-left 33s linear infinite;
+      -ms-animation: spin-left 33s linear infinite;
+       -o-animation: spin-left 33s linear infinite;
+          animation: spin-left 33s linear infinite;
+}
+
+#uranus{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 35px;
+  width: 35px;
+  margin-top: -18px;
+  margin-left: -25px;
+}
+
+#uranus-orbit{
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 850px;
+    height: 850px;
+    margin-top: -410px;
+    margin-left: -410px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 25s linear infinite;
+     -moz-animation: spin-left 25s linear infinite;
+      -ms-animation: spin-left 25s linear infinite;
+       -o-animation: spin-left 25s linear infinite;
+          animation: spin-left 25s linear infinite;
+}
+
+#neptune{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#neptune-orbit{
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 950px;
+    height: 950px;
+    margin-top: -460px;
+    margin-left: -460px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 30s linear infinite;
+     -moz-animation: spin-left 30s linear infinite;
+      -ms-animation: spin-left 30s linear infinite;
+       -o-animation: spin-left 30s linear infinite;
+          animation: spin-left 30s linear infinite;
+}
+
+#pluto{
+    position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+#pluto-orbit{
+   position: absolute;
+    top: 55%;
+    left: 55%;
+
+    width: 1050px;
+    height: 1050px;
+    margin-top: -510px;
+    margin-left: -510px;
+
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+     -webkit-animation: spin-left 15s linear infinite;
+     -moz-animation: spin-left 15s linear infinite;
+      -ms-animation: spin-left 15s linear infinite;
+       -o-animation: spin-left 15s linear infinite;
+          animation: spin-left 15s linear infinite;
 }
 
 @-webkit-keyframes spin-left {
